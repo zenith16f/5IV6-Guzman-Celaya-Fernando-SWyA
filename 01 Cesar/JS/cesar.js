@@ -57,9 +57,9 @@ const descifrar = () => {
 // Event Listeners
 texto.addEventListener("keyup", () => {
   cifrar();
-  descifrar();
+  //descifrar();
 });
 desplazamiento.addEventListener("change", () => {
   cifrar();
-  descifrar();
+  //descifrar();
 });
