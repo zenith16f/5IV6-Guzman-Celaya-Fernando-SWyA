@@ -1,7 +1,10 @@
 const letras = "abcdefghijklmnopqrstuvwxyz";
 //* Cipher
-
 function cifrar(mensaje, desplazamiento) {
+  if (letras.includes(desplazamiento)) {
+    desplazamiento = letras.indexOf(desplazamiento.toLocaleLowerCase());
+  }
+
   let texto = mensaje.toLowerCase();
   let res = "";
   desplazamiento = ((desplazamiento % 26) + 26) % 26;
@@ -30,6 +33,10 @@ function cifrarButton() {
 
 //* Descipher
 function descifrar(mensaje, desplazamiento) {
+  if (letras.includes(desplazamiento)) {
+    desplazamiento = letras.indexOf(desplazamiento.toLocaleLowerCase());
+  }
+
   let texto = mensaje.toLowerCase();
   let res = "";
   desplazamiento = ((desplazamiento % 26) - 26) % 26;

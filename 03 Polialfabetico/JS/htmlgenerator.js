@@ -50,7 +50,7 @@ function generarCesar() {
   <input
     type="button"
     class="btn btn-info"
-    value="copiar"
+    value="Copiar"
     onclick="copy()"
   />
 </div>
@@ -157,7 +157,7 @@ function generarViggenere() {
             <input
               type="button"
               class="btn btn-info"
-              value="copiar"
+              value="Copiar"
               onclick="colocar()"
             />
           </p>
