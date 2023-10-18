@@ -12,7 +12,11 @@ function cifrar(mensaje, desplazamiento) {
     for (let i = 0; i < texto.length; i++) {
       let pos = (letras.indexOf(texto[i]) + desplazamiento) % 26;
 
-      res += letras[pos];
+      if (texto[i] !== " ") {
+        res += letras[pos];
+      } else {
+        res += " ";
+      }
     }
   } else {
     res += texto[i];
@@ -44,7 +48,11 @@ function descifrar(mensaje, desplazamiento) {
     for (let i = 0; i < texto.length; i++) {
       let pos = (letras.indexOf(texto[i]) - desplazamiento) % 26;
 
-      res += letras[pos];
+      if (texto[i] !== " ") {
+        res += letras[pos];
+      } else {
+        res += " ";
+      }
     }
   } else {
     res += texto[i];

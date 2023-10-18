@@ -10,7 +10,7 @@ function generarCesar() {
   // Contenido Viggenere
   let contenidoCifrado = `
   <div class="center-block">
-  <h3>Desplazamiento</h3>
+  <h4>Desplazamiento</h4>
   <p>Escoge la forma para desplazar el texto</p>
   <button onclick="generarInputNumero()" class="btn btn-dark" type="button">
     Por numero

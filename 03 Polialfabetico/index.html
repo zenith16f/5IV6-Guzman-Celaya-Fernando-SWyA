@@ -44,22 +44,38 @@
     <div class="container">
       <h1>Cifrados Polialfabeticos</h1>
       <h4>Texto a Cifrar</h4>
-      <br />
       <p><input type="text" id="texto" /></p>
-      <h2>Escoge tu forma de cifrar</h2>
+      <h4>Escoge tu forma de cifrar</h4>
 
-      <button class="btn btn-dark" type="button" onclick="generarCesar()">
-        Cifrado Cesar
-      </button>
-      <button class="btn btn-dark" type="button" onclick="generarViggenere()">
-        Cifrado Viggenere
-      </button>
-      <button class="btn btn-dark" type="button" onclick="cancelar()">
-        Cancelar
-      </button>
+      <div class="cifrados">
+        <button
+          class="btn btn-dark"
+          type="button"
+          id="cesar-btn"
+          onclick="generarCesar()"
+        >
+          Cifrado Cesar
+        </button>
+        <button
+          class="btn btn-dark"
+          type="button"
+          id="viggenere-btn"
+          onclick="generarViggenere()"
+        >
+          Cifrado Viggenere
+        </button>
+        <button
+          class="btn btn-dark"
+          type="button"
+          id="cancel"
+          onclick="cancelar()"
+        >
+          Cancelar
+        </button>
+      </div>
 
+      <br />
       <div id="cifrado"></div>
-
       <div class="links">
         <a href="../index.html">Home</a>
       </div>
